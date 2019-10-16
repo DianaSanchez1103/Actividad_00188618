@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Amaranth|Quicksand&display=swap');
+
+::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: calc(0.5em + 1vh);
+}
+
+body{
+    background-color: #145861;
+    margin: 0;
+    color: white;
+}
+
+/*Agrega flex en el header y espacio entre los elementos*/
+.header {
+    display: flex;
+    justify-content: space-between
+}
+
+/*Permire desactivar la visualizacion de un elemento en src-only*/
+.src-only {
+    display: none;
+}
+
+h1{
+    font-family: 'Amaranth', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Amaranth', sans-serif;
+    color:white;
+}
+
+h3{
+    font-family: 'Amaranth', sans-serif;
+    color:white;
+}
+
+.container p{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    grid-auto-rows: 35px 1fr;
+}
+.info{
+    display: flex;
+    width: 500px;;
+}
+
+.info .container{
+    width: 95%;
+}
+
+.info .container ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 220px 220px;
+    grid-auto-rows: 250px;
+}
+
+.info{
+    margin-right: 0px; 
+}
+
+.Calendario .not{
+    display: none;
+}
+
+.datitos{
+    margin-top:0px;
+    margin-left: 14px;
+    margin-bottom: 35px;
+    padding-top:25px;
+    grid-column: 2 / span 1;
+}
+
+.datitos h2{
+    margin-bottom: 0px;
+    font-size:30px;
+}
+
+.datitos h3{
+    font-size:18px;
+    padding-left:48px;
+    margin-top:0px;
+    margin-bottom: 10px;
+}
+
+.menu {
+    background-color: aliceblue;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 0px;
+    
+}
+.mostrar{
+    display: inline;
+}
+
+.perfil{
+    margin-top:0px;
+}
+
+.Calendario .container p{
+    font-size: 15px;
+    padding: 0;
+    text-align: left;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.menu li {
+    display: block;
+    margin-top: 5px;
+    font-size: 22px;
+}
+
+.menu li a {
+    color: #145861;
+    text-decoration: none;
+    
+}
+
+.Calendario ul{
+    list-style: none;
+}
+
+.Calendario article{
+    display: grid;
+    grid-template-columns: 23% 1fr;
+    grid-auto-rows: 250px;
+}
+
+.Calendario article div h3{
+    color: gray;
+    padding-left: 30%;
+    padding-top:5px; 
+}
+
+.Calendario article div{
+    grid-column: 1 / span 1;
+}
+
+.Calendario .parrafo{
+    margin-top:25px;
+    margin-right: 25px;
+    grid-column: 2 / span 2;
+    color: #145861;
+}
+
+img{
+    margin-top: 20px;
+    border-radius: 15px;
+    width: 200px;
+    height: 200px;
+}
+
+.Calendario article div img{
+    width: 150px;
+    margin-top: 0px;
+    height: 150px;
+    border-radius: 10px;
+    padding-left:10px;
+}
+
+.todo{
+    margin-top:35px;
+    display: grid;
+    height: 1fr;
+    grid-template-columns: 500px 1fr;
+    grid-auto-rows: 250px; 
+}
+
+.info{
+    grid-column: 1 / span 1;
+}
+
+.Calendario{
+    grid-column: 2/ span 1;
+    margin-left:30px;
+    background-color: rgb(202, 228, 228);
+    border-radius: 15px;
+    margin-right: 25px;
+}
+
+.Calendario h3{
+    margin-top:5px;
+}
+
+
+
