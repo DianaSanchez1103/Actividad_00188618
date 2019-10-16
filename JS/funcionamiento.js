@@ -1,6 +1,6 @@
 window.onload = function(){
-    var Menu = document.querySelectorAll(".link");
-    var Articulos = document.querySelectorAll(".Diaa");
+    var Menu = document.querySelectorAll("a");
+    var Articulos = document.querySelectorAll("article");
 
     Menu.forEach((dia)=>{
         dia.addEventListener("click", () =>{
@@ -8,7 +8,7 @@ window.onload = function(){
                 dia.classList.add("not");
             })
             var idDia = dia.id;
-            var comprobante = document.querySelector(".Diaa." + idDia);
+            var comprobante = document.querySelector("." + idDia);
             comprobante.classList.toggle("not");
         });
     });
